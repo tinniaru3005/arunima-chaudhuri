@@ -243,4 +243,52 @@ footer p{color:var(--muted);max-width:32em}
     </div>
   </section>
 
+  <section class="sec" id="work">
+    <div class="sec-head">
+      <span class="kicker">the road so far</span>
+      <h2>Where I've worked</h2>
+    </div>
+    <ol class="timeline">
+      <li class="job"><span class="dot"></span><div class="job-card">
+        <div class="job-top"><h3>Research Engineer, P2P Networking <span class="org">· Status</span></h3><span class="when">Jun 2025 – Aug 2026</span></div>
+        <ul>
+          <li>Wrote the <a href="https://gist.github.com/tinniaru3005/ffc97841bec35b9e7a08012688c1cb68" target="_blank" rel="noopener">RFC</a> and shipped a <a href="https://github.com/vacp2p/logos-capability-discovery-poc" target="_blank" rel="noopener">Go proof of concept</a> for Logos Capability Discovery, a new discovery protocol on libp2p's Kademlia DHT that makes smaller services much quicker to find.</li>
+          <li>Maintained nim-libp2p, designed its <a href="https://gist.github.com/tinniaru3005/04dc0a8cb672176b7665904bcbcea823" target="_blank" rel="noopener">automated integration tests</a> for capability discovery, and reviewed and landed core PRs in production.</li>
+          <li>Ran nodes on the live Logos Delivery network and <a href="https://forum.research.logos.co/t/service-discovery-network-simulation/689/3" target="_blank" rel="noopener">wrote up how discovery behaved</a>.</li>
+          <li>Built a Go discv5 crawler that finds and logs active Ethereum mainnet nodes.</li>
+        </ul>
+      </div></li>
+      <li class="job"><span class="dot"></span><div class="job-card">
+        <div class="job-top"><h3>Research Engineer, Ethereum Protocols <span class="org">· Status</span></h3><span class="when">Jul 2024 – May 2025</span></div>
+        <ul>
+          <li>Built the <a href="https://github.com/tinniaru3005/blobtx-suffix-miner" target="_blank" rel="noopener">BlobTx Suffix Miner</a> in Go: it pulls post-EIP-4844 blob transactions from mainnet and tweaks GasTipCap to produce all 16 possible 4-bit hash endings.</li>
+          <li>Crawled 295K Type 3 transactions across 7K post-Pectra epochs and <a href="https://ethresear.ch/t/the-state-of-type-3-transactions-after-pectra-one-month-of-blob-data-activity/22667" target="_blank" rel="noopener">published the blob-activity trends on ethresear.ch</a>.</li>
+          <li>Simulated vertical block dissemination across 10K+ nodes and showed faster propagation than builder broadcast (<a href="https://gist.github.com/tinniaru3005/c8c7450506ce881eee11ace681487eef" target="_blank" rel="noopener">PRs</a>).</li>
+        </ul>
+      </div></li>
+      <li class="job"><span class="dot"></span><div class="job-card">
+        <div class="job-top"><h3>SWE Intern, AI &amp; Full Stack <span class="org">· Netradyne</span></h3><span class="when">Jan 2025 – Jul 2025</span></div>
+        <ul>
+          <li>Built an end-to-end RAG pipeline (containerized ingestion, object storage, PGVector, an LLM endpoint) behind a semantic document chatbot.</li>
+          <li>Shipped AngularJS + Spring Boot features used by 3K+ enterprise clients, with integration tests and Jenkins CI/CD.</li>
+        </ul>
+      </div></li>
+      <li class="job"><span class="dot"></span><div class="job-card">
+        <div class="job-top"><h3>Research Engineering Intern <span class="org">· Status</span></h3><span class="when">Jan 2024 – Jun 2024</span></div>
+        <ul>
+          <li>Built a Python simulator for Data Availability Sampling on a 10K+ node network, with malicious peers, gossip and correlated failures (<a href="https://gist.github.com/tinniaru3005/c8c7450506ce881eee11ace681487eef" target="_blank" rel="noopener">PRs</a>).</li>
+          <li>Tested sampling under Byzantine and adaptive adversaries to improve latency, bandwidth and reconstruction.</li>
+        </ul>
+      </div></li>
+      <li class="job"><span class="dot"></span><div class="job-card">
+        <div class="job-top"><h3>LFX Mentee, AI &amp; Open Source PM <span class="org">· Hyperledger Foundation</span></h3><span class="when">Jun 2023 – Nov 2023</span></div>
+        <p class="plain">Led the Documentation Task Force across 13 project teams and founded the AI Task Force, rolling out LLM workflows that saved contributors real time.</p>
+      </div></li>
+      <li class="job"><span class="dot"></span><div class="job-card">
+        <div class="job-top"><h3>MLH Fellow, DeFi <span class="org">· Solana Labs</span></h3><span class="when">Sep 2022 – Dec 2022</span></div>
+        <p class="plain">Built <a href="https://github.com/tinniaru3005/pyzeta" target="_blank" rel="noopener">pyzeta</a>, an open-source Python SDK for the Zeta derivatives exchange on Solana.</p>
+      </div></li>
+    </ol>
+  </section>
+
 </div>
