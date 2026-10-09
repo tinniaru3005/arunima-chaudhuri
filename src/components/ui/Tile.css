@@ -1,0 +1,22 @@
+.tile {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+  min-width: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.tile-link:hover { transform: translateY(-4px) rotate(-0.4deg); box-shadow: var(--shadow); }
+.tile h3 { font-size: 1.18rem; font-weight: 700; line-height: 1.25; }
+.tile p { color: var(--muted); font-size: 0.96rem; }
+.tile-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 6px; }
+.tile-cta { font-weight: 600; color: var(--berry); font-size: 0.9rem; }
+.tag { font-family: var(--f-mono); font-size: 0.72rem; padding: 3px 8px; border-radius: 6px; background: var(--berry-soft); color: var(--ink); }
+.tile-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 6px 16px; }
+.tile-top h3 { font-size: 1.12rem; }
+.tile p.tile-links { color: var(--ink); font-size: 0.92rem; }
