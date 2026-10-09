@@ -1,0 +1,27 @@
+.now {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: clamp(24px, 4vw, 44px);
+  border-radius: 22px;
+  background: var(--ink);
+  color: var(--paper);
+}
+.now::after { content: ''; position: absolute; right: -60px; top: -60px; width: 200px; height: 200px; border-radius: 50%; background: var(--berry); opacity: 0.35; }
+.now > * { position: relative; z-index: 1; min-width: 0; }
+.now a { color: var(--sun); }
+.now p { color: color-mix(in srgb, var(--paper) 82%, transparent); }
+.now-intro { display: flex; flex-direction: column; gap: 12px; }
+.now-intro h3 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); font-weight: 800; margin-top: 2px; }
+.now-badge { align-self: flex-start; background: var(--sun); color: var(--on-accent); font-weight: 700; font-size: 0.8rem; padding: 4px 10px; border-radius: 999px; letter-spacing: 0.04em; text-transform: uppercase; }
+.now-projects { display: flex; flex-direction: column; gap: 14px; }
+.now-project { display: block; text-decoration: none; color: inherit; border: 1.5px solid color-mix(in srgb, var(--paper) 25%, transparent); border-radius: 14px; padding: 16px 18px; transition: border-color 0.2s, transform 0.2s; }
+.now-project:hover { border-color: var(--sun); transform: translateX(4px); }
+.now-project strong { display: block; font-family: var(--f-display); font-size: 1.25rem; color: var(--sun); }
+.now-project span { font-size: 0.95rem; color: color-mix(in srgb, var(--paper) 80%, transparent); }
+
+@media (max-width: 860px) {
+  .now { grid-template-columns: 1fr; }
+}
