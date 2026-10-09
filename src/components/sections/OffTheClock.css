@@ -1,0 +1,28 @@
+.offclock { background: var(--berry-soft); border-radius: 28px; padding: clamp(24px, 4vw, 48px); }
+.offclock .section-intro { color: var(--ink); }
+.stickers { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.sticker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+  padding: 18px 16px 20px;
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+.sticker:nth-child(odd) { transform: rotate(-2deg); }
+.sticker:nth-child(even) { transform: rotate(1.8deg); }
+.sticker:hover { transform: rotate(0) translateY(-6px) scale(1.03); }
+.sticker svg { width: 54px; height: 54px; }
+.sticker h3 { font-family: var(--f-hand); font-size: 1.7rem; font-weight: 700; line-height: 1; }
+.sticker p { font-size: 0.92rem; color: var(--muted); }
+
+@media (max-width: 860px) {
+  .stickers { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .sticker:last-child { grid-column: 1 / -1; }
+}
