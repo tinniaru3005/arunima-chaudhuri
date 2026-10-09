@@ -1,0 +1,6 @@
+.nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.nav-logo { font-family: var(--f-hand); font-weight: 700; font-size: 1.9rem; color: var(--ink); text-decoration: none; line-height: 1; }
+.nav-logo span { color: var(--berry); }
+.nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0; padding: 0; font-weight: 500; font-size: 0.95rem; }
+.nav ul a { color: var(--ink); text-decoration: none; }
+.nav ul a:hover { color: var(--berry); }
