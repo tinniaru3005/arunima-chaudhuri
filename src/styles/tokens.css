@@ -1,0 +1,51 @@
+/* Design tokens: blush paper, plum ink, berry accent, sunshine highlight. */
+:root {
+  --paper: #fbedea;
+  --card: #fffaf8;
+  --ink: #2a1622;
+  --muted: #76586a;
+  --line: #ebd3d2;
+  --berry: #b3134f;
+  --berry-soft: #f7d3de;
+  --sun: #ffd25e;
+  --sea: #2e8c8a;
+  --on-accent: #2a1622;
+  --shadow: 0 1px 0 rgba(90, 30, 60, 0.06), 0 10px 30px -14px rgba(90, 30, 60, 0.28);
+
+  --f-display: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  --f-body: 'Figtree', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --f-hand: 'Caveat', 'Comic Sans MS', 'Bradley Hand', cursive;
+  --f-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #1d1218;
+    --card: #2a1a23;
+    --ink: #f7e7ec;
+    --muted: #c2a3b3;
+    --line: #41293a;
+    --berry: #ff6f9c;
+    --berry-soft: #4a2134;
+    --sun: #f2c14e;
+    --sea: #5cc6c2;
+    --shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 12px 30px -14px rgba(0, 0, 0, 0.7);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --paper: #1d1218;
+  --card: #2a1a23;
+  --ink: #f7e7ec;
+  --muted: #c2a3b3;
+  --line: #41293a;
+  --berry: #ff6f9c;
+  --berry-soft: #4a2134;
+  --sun: #f2c14e;
+  --sea: #5cc6c2;
+  --shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 12px 30px -14px rgba(0, 0, 0, 0.7);
+  color-scheme: dark;
+}

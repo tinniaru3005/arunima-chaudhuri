@@ -1,0 +1,16 @@
+.footer { display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; padding-top: 12px; }
+.footer h2 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; }
+.footer > p { color: var(--muted); max-width: 32em; }
+.footer code { font-family: var(--f-mono); font-size: 0.85rem; color: var(--ink); user-select: all; word-break: break-all; }
+.cat-btn { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 0; border: 0; background: none; color: var(--ink); cursor: pointer; }
+.cat-btn svg { width: 96px; height: 80px; }
+.cat-tail { transform-origin: 66px 62px; animation: wag 2.4s ease-in-out infinite; }
+.cat-ears { transition: transform 0.2s; }
+.cat-btn:hover .cat-ears { transform: translateY(-2px); }
+.mrrp { min-height: 1.6em; font-family: var(--f-hand); font-size: 1.3rem; color: var(--berry); }
+.small { font-size: 0.85rem; color: var(--muted); }
+
+@keyframes wag {
+  0%, 100% { transform: rotate(0); }
+  50% { transform: rotate(14deg); }
+}
